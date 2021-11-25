@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos.css" rel="stylesheet">
+    <title>Refugio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Maven+Pro&display=swap" rel="stylesheet">
+
+    <!-- Para slider (imagenes) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <h2 class="titulo">REFUGIO ANGELITOS<img src="imagenes/lista_icono.png"></h2>
+            <ul>
+                <li><a href="index.html" class="active">INICIO</a></li>
+                <li><a href="paginas/nosotros.html">NOSOTROS</a></li>
+                <li><a href="paginas/rescates.html">RESCATES</a></li>
+                <li><a href="paginas/contactos.html">CONTACTOS</a></li>
+                <li><a href="paginas/galeria.html">GALERÍA</a></li>
+                <li><a id=ultimoelemento href="paginas/donacion.html">DONA</a></li>
+            </ul>
+        </div>
+    </header>
+<!-- --------------------------------------------------------------------------- -->
+    <section class="slide-wrap">
+        <ul class="slider1">
+            <li><img src="slider/img1.jpg" alt="slider1"></li>
+            <li><img src="slider/img2.jpg" alt="slider2"></li>
+            <li><img src="slider/img3.jpg" alt="slider3"></li>
+        </ul>
+    </section>
+
+    <section class="cuerpo">
+            
+            <article class="articulos">
+                <figure class="img_cont">
+                    <img src="imagenes/perritos_inicio.jpg" class="img" alt="">
+                </figure>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat a voluptatem exercitationem, ex! Similique iure ipsam modi exercitationem? Molestias, sequi, amet culpa qui autem unde aliquam necessitatibus omnis placeat dolore?
+                Rerum voluptates cumque itaque commodi cum explicabo omnis expedita facere culpa ratione laboriosam dicta, esse quos perspiciatis similique cupiditate est consequatur dolor animi quasi quod a! Aliquid necessitatibus officia, nihil?
+                Voluptas, aspernatur, officiis! Iusto voluptatem esse velit suscipit beatae quisquam provident nostrum expedita quia sit eius ea, ut officiis! Quis consectetur consequuntur omnis corporis, sequi debitis sint distinctio libero cum?
+                Aperiam praesentium culpa quam dicta optio dignissimos obcaecati facere. Exercitationem quia, voluptatem dicta recusandae sed. Non quisquam quis quaerat cumque nobis sed provident, doloremque, repudiandae sapiente eligendi veniam dolor ipsa?
+                Quas ipsam eveniet non est sint, laudantium at esse, obcaecati architecto, repellendus aliquam optio tempora, corporis. Corporis, ea. Quod labore temporibus, harum debitis obcaecati explicabo error eveniet, odit veniam maiores.</p>
+            </article>
+
+            <article class="articulos">
+                <figure class="img2_cont">
+                    <img src="imagenes/perritos2_inicio.jpg" class="img2" alt="">
+                </figure>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Illo laborum, esse excepturi temporibus natus libero quas culpa nisi cupiditate qui. Eligendi suscipit reiciendis voluptas, amet a consequuntur nulla quae rerum!
+                Est, dolorum, beatae. Quod error exercitationem sint minima temporibus iste voluptates. Veniam similique, asperiores? Unde sit illo possimus commodi a tempora labore ipsum laborum corporis voluptatem. Animi nam rem iure.
+                Soluta ullam dicta enim quae, vero porro numquam doloremque quo, delectus sequi? Temporibus voluptas iure dolor saepe et magnam nemo alias at amet nisi, deleniti placeat, commodi mollitia ab id?
+                Voluptatibus tempore unde soluta, iure tenetur fugit labore aliquid! Iste fuga nostrum nihil, totam omnis amet quasi dolores ab facilis placeat maiores autem aperiam beatae dolor distinctio unde. Aliquid, nam.
+                A, cumque dolore. Ipsam earum nesciunt explicabo exercitationem recusandae nulla facilis rem atque tenetur, debitis incidunt? Neque impedit aperiam, sit sint aspernatur! Aut labore placeat, ipsam, ipsum amet fuga itaque!</p>
+            </article>
+
+    </section>
+        
+    <footer class="pie">
+        <p>Derechos Reservados</p>
+        <p class="iconos"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></p>
+    </footer>
+
+    <!-- Scripts SLIDER-->
+    <script>
+        $(document).ready(function(){
+            $('.slider1').bxSlider({
+                mode: 'fade'
+            })
+            $('.slider2').bxSlider({
+                mode: 'fade'
+            })
+            $('.slider3').bxSlider({
+                mode: 'fade'
+            })
+        })
+    </script>
+</body>
+</html>

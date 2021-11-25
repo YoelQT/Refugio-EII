@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dona.css" rel="stylesheet">
+    <title>Donación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Maven+Pro&display=swap" rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <h2 class="titulo">REFUGIO ANGELITOS<img src="../imagenes/lista_icono.png"></h2>      
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="rescates.html">RESCATES</a></li>
+                <li><a href="contactos.html">CONTACTOS</a></li>
+                <li><a href="galeria.html">GALERÍA</a></li>
+                <li><a id=ultimoelemento href="donacion.html" class="active">DONA</a></li>
+            </ul>
+        </div> 
+    </header>
+<!-- ----------------------------------------------------------------------------------- -->
+    <section class="todo">
+    <header class="tit">
+        <h1>FORMULARIO</h1>
+    </header>
+
+    <section class="contenedor">
+
+        <form class="formulario">
+            
+            <input type="text" class="principales" name="nombres" placeholder="Escriba su nombre">
+            <input type="text" class="principales" name="apellidos" placeholder="Escriba su apellido">
+            <input type="email" class="principales" name="correo" placeholder="Escriba su correo electrónico">
+            <br>
+            <label>Eliga el método de pago:</label><br>
+            <input type="radio" name="opcion" value="">PayPal
+            <input type="radio" name="opcion">Tarjeta de Crédito <br>
+            <input type="radio" name="tipo_pago">Mensualmente
+            <input type="radio" name="tipo_pago">Donación Puntual
+            <br>
+            <select name="moneda">
+                <option>Dólar</option>
+                <option>Euro</option>
+            </select>
+            <input type="number" name="cantidad" min="50" placeholder="50,00"><br>
+            <input type="text" class="tarjeta" name="tarjeta" placeholder="Nro de su tarjeta" class="principales"><br>
+            <input type="submit" class="enviar" name="enviar" value="DONAR AHORA">
+
+        </form>
+    </section>
+
+<!-- ----------------------------------------------------------------------------------- -->
+    <footer class="pie">
+        <p>Derechos Reservados</p>
+        <p class="iconos"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a></p>
+    </footer>
+    </section>
+</body>
+</html>

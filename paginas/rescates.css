@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ESTILOS MENU Y BOTON*/
+
+.titulo{
+    font-family: 'Indie Flower', cursive;
+}
+
+.barra img{
+    display: none;
+}
+
+.barra{
+    background-color: #2c3e50;
+    height: 160px;
+}
+
+.barra ul{
+    padding: 10px;
+    text-align: right;
+    height: 41px;
+}
+
+.barra li{
+    background-color: #2c3e50;
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 1.1em;
+    /*border: 1px solid #130f40;*/
+    /*border-radius: 20px;*/
+}
+
+.barra a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    border-bottom: 5px solid #0052cc;
+    color: #d9d9d9;
+}
+
+.active {
+    border-bottom: 5px solid #0052cc;
+}
+
+.titulo{
+    padding: 20px 30px;
+    color: white;
+    font-size: 2em;
+    height: auto;
+}
+
+/*ESTILOS AL CUERPO QUE NO DEBEN FALTAR-------------------------------*/
+
+body{
+    background-color: #ecf0f1;
+}
+
+.pie{
+    clear: both;
+    background-color: #535c68;
+    margin: 20px 10px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    color: #bdc3c7;
+}
+
+.iconos {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.iconos a{
+    padding: 15px;
+    margin: 0 10px;
+    color: #bfbfbf;
+    font-size: 2em;
+}
+
+/* ESTILOS PROPIOS DE AQUI */
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.6em;
+}
+
+.cuerpo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.articulo {
+    padding: 20px 20px;
+}
+
+.img {
+    width: 30%;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.articulo p {
+    font-family: cursive;
+}
+
+.adicional {
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 832px){
+
+/*ESTILOS SOLO PARA EL BOTON*/
+
+    .barra{
+        font-family: 'Lato', sans-serif;
+        /**Alto y ancho de donde se va a activar cuando pase el mouse**/
+        width: 5%;
+        height: 6%;
+        /*Para que este siempre en la misma parte de la pantalla aunque se haga scroll*/
+        position: fixed;
+        /*Tiempo en el que va a transitar la animacion*/
+        transition: .4s all ;
+        /*este arriba de todo en la pantalla*/
+        z-index: 1;
+        background-color: transparent;
+        padding: 15px;
+    }
+
+    .barra ul{
+
+        /*solucionar espacios no deseados*/
+        display: none;
+        padding:0px;
+        text-align: center;
+    }
+    .barra li{
+        /*Velocidad de transicion del contenido*/
+        margin: 0;
+        padding: 0;
+        transition:all .3s;
+        list-style: none;
+        background-color: transparent;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .barra li:hover{
+        padding: 0px;
+    }
+
+    .barra a{
+        text-decoration: none;     
+        font-weight: normal;
+        
+        /*La letra crece con el menu de esta manera no se va a ver como 
+        se ajusta al margen mientras crece*/
+        transition: .3s all ;
+        /*Se ocultan los elementos*/
+        font-size: 0px;
+        padding:0px;
+    }
+
+    .barra h2{
+        text-align: center;
+        color:white;
+        padding:0px;
+        padding-bottom:7px;
+
+        /*Se oculta el h2*/
+        font-size:0px;   
+    }
+
+    .barra img{
+        display: block;
+        padding-top: 8px;
+        padding-left: 5px;
+    }
+
+    .barra:hover{
+        /*Tamaño cuando el cursor señale la barra*/
+        width: 60%;
+        height: 100vh;
+        padding: 0;
+        /*Color*/
+        background: rgba(5, 33, 51, 0.98);
+    }
+    .barra:hover h2{
+        /*posicion dentro de barra del h2*/
+        padding:15px;
+        font-size: 35px;
+    }
+    .barra:hover a{ 
+        font-size:20px ;
+        color:white;
+        /*Se usa el display block para que el enlace respete el margin*/
+        display: block;
+        padding:20px;
+    }
+    .barra:hover img{
+        /*Desaparecer la imagen*/
+        height:0px;
+    }
+
+    .barra:hover ul{
+        display: block;
+    }
+
+    .barra:hover li{
+        border-top:1px solid #03121b;
+        /*Espacios entre las lineas y el contenido*/
+        
+        width:100%;
+            
+    }
+
+    .barra:hover #ultimoelemento{
+        border-bottom: 1px solid #03121b;
+    }
+
+    .barra:hover a:hover{ 
+        font-size: 25px;
+        padding: 30px 0px; 
+        background: rgba(23, 78, 112, 0.98);  
+        border-bottom: none; 
+    }
+
+    .active {
+        border-bottom: none;
+    }
+
+    a:hover{
+        border-bottom: none;
+    }
+    .active:hover {
+        border-bottom: none;
+    }
+/*-----------------------------------------------*/
+/* ---------------------------------------------- */
+    h1 {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .cuerpo h1 {
+        border-top: 3px solid black;
+        margin-top: 40px;
+    }
+
+    .img {
+        float: none;
+        margin: 0;
+        width: 50%;
+    }
+
+    .img_cont {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .img2_cont {
+        text-align: center;
+    }
+
+    /* ESTILOS MENU */
+    .barra:hover a{ 
+        font-size:20px ;
+        color:white;
+        /*Se usa el display block para que el enlace respete el margin*/
+        display: block;
+        padding:20px;
+    }
+
+    .barra:hover ul{
+        display: block;
+        text-align: center;
+    }
+
+    .barra:hover a:hover{ 
+        font-size: 25px;
+        padding: 15px; 
+        background: rgba(23, 78, 112, 0.98);
+        border-bottom: none;  
+    }
+
+    .barra:hover{
+        /*Tamaño cuando el cursor señale la barra*/
+        height: 92%;
+    }
+}
